@@ -77,7 +77,7 @@
     - name: Print out the hawkular-services address
       debug:
         msg:
-          - "The hostname for the Hawkular Services service is: http://{{ hawkular_services_address.stdout }}"
+          - "The hostname for the Hawkular Services service is: https://{{ hawkular_services_address.stdout }}"
           - "Username: {{ real_hawkular_user.stdout }}"
           - "Password: {{ real_hawkular_password.stdout }}"
           - "It may take a minute or two to spin the containers. Especially if it is pulling the images."
