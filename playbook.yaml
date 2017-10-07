@@ -51,7 +51,7 @@
         --param HAWKULAR_SERVICES_IMAGE={{ hawkular_services_image }}
         --param CASSANDRA_IMAGE={{ cassandra_image }}
         --param ROUTE_HOSTNAME={{ route_hostname }}
-        --param HAWKULAR_USE_SSL=true,
+        --param HAWKULAR_USE_SSL=true
         --param HAWKULAR_SECRET={{ secret_name }}
         --param SERVICE_ACCOUNT_NAME={{ service_account }}
         `[ -z "{{ hawkular_user }}" ] || echo "--param HAWKULAR_USER={{ hawkular_user }}"` \

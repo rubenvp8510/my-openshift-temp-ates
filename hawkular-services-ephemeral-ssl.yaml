@@ -118,7 +118,9 @@ objects:
       kind: Service
       name: hawkular-services
     port:
-      targetPort: http-8080-tcp
+      targetPort: https-8443-tcp
+    tls:
+      termination: passthrough
 
 - apiVersion: v1
   kind: DeploymentConfig
